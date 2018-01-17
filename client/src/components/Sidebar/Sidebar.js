@@ -30,7 +30,7 @@ Sidebar.propTypes = {
 }
 
 Sidebar.defaultProps = {
-  title: 'Restaurants'
+  title: 'HELP near You'
 }
 
 export default Sidebar

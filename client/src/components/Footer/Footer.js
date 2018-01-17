@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 import styles from './styles.module.css';
+import logo from '../../media/happy-trash-fire.png'
 
 export class Footer extends React.Component {
   
@@ -10,7 +11,7 @@ export class Footer extends React.Component {
       <div className="bottombar">
         <Link to="/">
           <p className="footer">
-            <i className="fa fa-yelp" aria-hidden="true"></i> HELP! <i className="fa fa-copyright" aria-hidden="true"></i> 2018 
+            <img src={logo} alt="Logo" height="20px" width="20px" /> HELP! <i className="fa fa-copyright" aria-hidden="true"></i> 2018 
           </p>
         </Link>
       </div>

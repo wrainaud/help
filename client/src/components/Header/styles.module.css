@@ -22,7 +22,7 @@ a {
 h1 {
     font-size: 28px;
     display: inline;
-    margin: -15px 0 auto 15px;
+    margin: -15px 0 auto 0;
     line-height: 50px;
     position: absolute;
     top: 30px;
