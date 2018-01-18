@@ -1,37 +1,16 @@
-import React, { PropTypes as T } from 'react'
-
-import Item from 'Item'
+import React from 'react'
+import Item from './Item'
 import styles from './styles.module.css'
+import Detail from '../Detail/Detail';
 
 export class Listing extends React.Component {
   render() {
     return (
       <div className="container">
-      {this.props.places.map(place => {
-        return (
-          <Item place={place}
-                onClick={this.props.onClick}
-                onHighlight={this.props.onHighlight}
-                offHighlight={this.props.offHighlight}
-                key={place.id} />
-        )
-      })}
+        <Item detail={Detail} key={this.props.place.id} />
       </div>
     )
   }
-}
-
-Listing.propTypes = {
-  places: T.array.isRequired,
-  onHighlight: T.func,
-  offHighlight: T.func,
-  onClick: T.func
-}
-
-Listing.defaultProps = {
-  onHighlight: () => {},
-  offHighlight: () => {},
-  onClick: () => {},
 }
 
 export default Listing
