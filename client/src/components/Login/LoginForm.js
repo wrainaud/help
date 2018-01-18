@@ -36,29 +36,35 @@ class LoginForm extends Component {
 			return <Redirect to={{ pathname: this.state.redirectTo }} />
 		} else {
 			return (
-				<div className="LoginForm">
-					<h1>Login form</h1>
-					<form>
-						<label htmlFor="username">Username: </label>
-						<input
-							type="text"
-							name="username"
-							value={this.state.username}
-							onChange={this.handleChange}
-						/>
-						<label htmlFor="password">Password: </label>
-						<input
-							type="password"
-							name="password"
-							value={this.state.password}
-							onChange={this.handleChange}
-						/>
-						<button onClick={this.handleSubmit}>Login</button>
-					</form>
-					<a href="/auth/google">
-						{/* <GoogleButton /> */}
-						<img src={googleButton} alt="sign into Google Button" />
-					</a>
+				<div className="LoginForm row justify-content-md-center">
+					<div className="col-md-6">
+						<h1 className="text-center"><i className="fa fa-sign-in" aria-hidden="true"></i> Login</h1>
+						<form>
+							<label htmlFor="username">Username </label>
+							<input
+								className="form-control"
+								type="text"
+								name="username"
+								value={this.state.username}
+								onChange={this.handleChange}
+							/>
+							<label htmlFor="password" className="search-bar">Password </label>
+							<input
+								className="form-control"
+								type="password"
+								name="password"
+								value={this.state.password}
+								onChange={this.handleChange}
+							/>
+							<button className="btn btn-block" onClick={this.handleSubmit}><i className="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+						</form>
+						<div className="text-center search-bar">
+							<a href="/auth/google">
+							{/* <GoogleButton /> */}
+								<img src={googleButton} alt="sign into Google Button" />
+							</a>
+						</div>
+					</div>
 				</div>
 			)
 		}

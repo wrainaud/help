@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 
+import styles from './styles.module.css';
+
 class SignupForm extends Component {
 	constructor() {
 		super()
@@ -44,30 +46,35 @@ class SignupForm extends Component {
 			return <Redirect to={{ pathname: this.state.redirectTo }} />
 		}
 		return (
-			<div className="SignupForm">
-				<h1>Signup form</h1>
-				<label htmlFor="username">Username: </label>
+			<div className="SignupForm row justify-content-md-center">
+				<div className="col-md-6">
+				<h1 className="text-center"><i className="fa fa-user-plus" aria-hidden="true"></i> Signup</h1>
+				<label htmlFor="username">Username </label>
 				<input
+					className="form-control"
 					type="text"
 					name="username"
 					value={this.state.username}
 					onChange={this.handleChange}
 				/>
-				<label htmlFor="password">Password: </label>
+				<label htmlFor="password" className="search-bar">Password </label>
 				<input
+					className="form-control"
 					type="password"
 					name="password"
 					value={this.state.password}
 					onChange={this.handleChange}
 				/>
-				<label htmlFor="confirmPassword">Confirm Password: </label>
+				<label htmlFor="confirmPassword" className="search-bar">Confirm Password </label>
 				<input
+					className="form-control"
 					type="password"
 					name="confirmPassword"
 					value={this.state.confirmPassword}
 					onChange={this.handleChange}
 				/>
-				<button onClick={this.handleSubmit}>Sign up</button>
+				<button onClick={this.handleSubmit} className="btn btn-block search-bar"> <i className="fa fa-user-plus" aria-hidden="true"></i> Sign up</button>
+				</div>
 			</div>
 		)
 	}
