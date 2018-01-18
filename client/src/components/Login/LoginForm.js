@@ -43,6 +43,7 @@ class LoginForm extends Component {
 						<input
 							type="text"
 							name="username"
+							className="col-sm-12"
 							value={this.state.username}
 							onChange={this.handleChange}
 						/>
@@ -50,6 +51,7 @@ class LoginForm extends Component {
 						<input
 							type="password"
 							name="password"
+							className="col-sm-12"
 							value={this.state.password}
 							onChange={this.handleChange}
 						/>

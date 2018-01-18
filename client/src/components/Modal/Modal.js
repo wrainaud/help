@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
+import LoginForm from '../Login/LoginForm'
+import SignupForm from '../Signup/SignupForm'
+import logo from '../../media/happy-trash-fire.png';
 import styles from './styles.module.css';
 
 class Modal extends React.Component {
@@ -22,15 +25,15 @@ class Modal extends React.Component {
         const containerClass = this.state.modalOpened ? 'modal-container modal-container-active' : 'modal-container'
         return (
             <div>
-                <button className='btn btn-primary' onClick={this.modalToggle}>Modal</button>
-
                 <div className={containerClass}>
-                    <div className='modal-header'></div>
+                    <div className='modal-header'>
+                        <img className="newLogo" src={logo} alt="Logo" height="60px" width="60px" />
+                            <h1 className='modal-title'> HELP! </h1></div>
                     <div className='modal-body'></div>
                     <div className='modal-footer'></div>
                 </div>
 
-                <div className={coverClass} onClick={this.modalToggle}></div>
+                <div className={coverClass}></div>
             </div>
         )
     }

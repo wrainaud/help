@@ -1,5 +1,6 @@
 @import url("../../styles/colors.css");
 
+
 .container {
   height: 100%;
   overflow: auto;
@@ -14,20 +15,13 @@
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
+}
 
-  h1 {
+.h1 {
     flex: 2;
-    &:hover {
-      color: var(--highlight);
-    }
   }
 
-  .rating {
-    text-align: right;
-    flex: 1;
-  }
-
-  &:last-child {
+  :last-child {
     border-bottom: none;
   }
-}
+

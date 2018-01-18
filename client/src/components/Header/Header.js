@@ -10,7 +10,7 @@ export class Header extends React.Component {
   render() {
     return (
       <div className="topbar">
-        <img src={logo} alt="Logo" height="70px" width="70px" />
+        <img src={logo} alt="Logo" className="newLogoH" height="70px" width="70px" />
         <Link to="/"><h1> HELP!</h1></Link>
         <section>
           <DisplayLinks />
