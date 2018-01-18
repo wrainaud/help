@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import googleButton from './btn_google_signin_dark_normal_web.png';
+import styles from './styles.module.css';
 
 class LoginForm extends Component {
 	constructor() {

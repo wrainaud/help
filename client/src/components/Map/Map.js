@@ -41,6 +41,14 @@ export class MapContainer extends Component {
     }
   };
 
+  mapOnChange = ({ center, zoom, bounds, marginBounds }) => {
+    console.log(center, zoom, bounds)
+    this.setState({
+      center
+    })
+    this.getPlacesList()
+  }
+
   // HIT OUR API TO PASS PARAMS INTO PLACES SEARCH (add more params for keywords or just hard code them)
   getPlacesList = () => {
     console.log('this hit');
@@ -67,6 +75,7 @@ export class MapContainer extends Component {
             defaultZoom={this.props.zoom}
             center={this.state.center}
             zoom={this.state.zoom}
+            onChange={this.mapOnChange}
           >
             {this.state.places ? this.state.places.map(place => 
               <AnyReactComponent lat={place.geometry.location.lat} lng={place.geometry.location.lng} src={place.icon} />

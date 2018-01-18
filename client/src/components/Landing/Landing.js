@@ -20,7 +20,7 @@ class Landing extends Component {
           
           <div className="row">
           
-            <div className="col-md-6 col-sm-12 text-center"> 
+            <div className="col-md-3 col-sm-6 text-center"> 
               <div className="icon-box">
                 <Link to="#" className="iconbtn">
                   <h3>ROADSIDE<br/> ASSISTANCE </h3>
@@ -29,7 +29,7 @@ class Landing extends Component {
               </div>
             </div>
         
-            <div className="col-md-6 col-sm-12 text-center"> 
+            <div className="col-md-3 col-sm-6 text-center"> 
               <div className="icon-box">
                 <Link to="#" className="iconbtn">
                   <h3>GAS STATION </h3>
@@ -38,7 +38,7 @@ class Landing extends Component {
               </div>
             </div>
 
-            <div className="col-md-6 col-sm-12 text-center"> 
+            <div className="col-md-3 col-sm-6 text-center"> 
               <div className="icon-box">
                 <Link to="#" className="iconbtn">
                   <h3>DIRECTIONS </h3>

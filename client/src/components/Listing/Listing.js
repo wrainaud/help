@@ -1,13 +1,13 @@
 import React from 'react'
-import Item from 'Item'
+import Item from './Item'
 import styles from './styles.module.css'
-import detail from '../Detail/detail';
+import Detail from '../Detail/Detail';
 
 export class Listing extends React.Component {
   render() {
     return (
       <div className="container">
-          <Item detail={detail} key={place.id} />
+        <Item detail={Detail} key={this.props.place.id} />
       </div>
     )
   }
