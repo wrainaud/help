@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import styles from './styles.module.css';
 
 import styles from './styles.module.css';
 
