@@ -1,5 +1,4 @@
 @import url("../../styles/base.css");
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,900');
 
 .topbar {
   background-color: #1e3e33;
@@ -10,7 +9,6 @@
   left: 0;
   width: 100%;
   text-shadow: 2px 2px 4px #000000;
-  
 }
 
 .nav-link {
@@ -19,12 +17,8 @@
     letter-spacing: 1px;
     background-color: #1e3e33;
     line-height: 40px;
-    font-family: 'Merriweather',
-    serif;
-    font-weight: 300;
 }
     
-
 .topbarText {
     font-size: 28px;
     display: inline;
@@ -32,9 +26,6 @@
     line-height: 50px;
     position: absolute;
     top: 30px;
-    font-family: 'Merriweather',
-    serif;
-    font-weight: 900;
  }
   
 section {
@@ -42,9 +33,4 @@ section {
   top: 0px;
   right: 25px;
   display: inline-flex;
-}
-
-.newLogoH {
-  display: inline-block;
-  padding-left: 10px;
 }

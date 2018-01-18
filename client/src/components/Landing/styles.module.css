@@ -1,18 +1,3 @@
-@import url("../../styles/base.css");
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body{
-  background: url("../../media/backdrop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Pontano Sans',
-  sans-serif;
-}
-
 .Landing {
   z-index: 10;
   margin-top: 60px;
@@ -22,6 +7,10 @@ body{
   text-align: center;
   height: auto;
   margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 .search-btn {
@@ -41,7 +30,7 @@ body{
 
 .btn-block {
   margin-top: 5px;
-  background-color: #f46f22;
+  background-color: #f4a922;
   color: #fff;
   border: 1px solid #fff;
     -moz-border-radius: 6px;
@@ -71,21 +60,10 @@ body{
 }
 
 a {
-  color: #f46f22;
+  color: #f4a922;
 }
 
 a:hover {
   text-decoration: none;
   color: #e62601;
-}
-
-.newLogo{
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  
-}
-
-h3{
-  color: #ffffff;
 }

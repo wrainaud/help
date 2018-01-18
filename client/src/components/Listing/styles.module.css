@@ -1,6 +1,5 @@
 @import url("../../styles/colors.css");
 
-
 .cont {
   height: 100%;
   overflow: auto;
@@ -25,7 +24,8 @@
   .rating {
     text-align: right;
     flex: 1;
+  }
 
-  :last-child {
+  &:last-child {
     border-bottom: none;
   }

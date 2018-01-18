@@ -14,17 +14,6 @@
     background-color: darkblue;
 }
 
-.modal-btns{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.modal-p{
-    margin: auto 40px;
-    font-size: 36px;
-    font-weight: bolder;
-}
-
 .modal-cover {
     position: fixed;
     top: 0;
@@ -43,7 +32,7 @@
 .modal-container {
     z-index: 1050;
     position: fixed;
-    border: 2px solid #1e3e33;
+    border: 1px solid lightgray;
     border-radius: 6px;
     background: white;
     width: 600px;
@@ -56,29 +45,4 @@
 
 .modal-container.modal-container-active {
     display: block;
-}
-
-.modal-header {
-    background-color: #1e3e33;
-    height: 80px;
-    color: #f46f22;
-}
-
-.modal-body{
-    display: flex;
-    align-content: center;
-    padding: 0px;
-    margin-top: 10px;
-}
-
-.modal-title {
-    margin-left: 75px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.newLogo{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    margin-top: 8px;
 }
