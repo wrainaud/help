@@ -9,7 +9,7 @@ class Landing extends Component {
       <div className="Landing">
         
         <header className="Landing-header">
-          <h3>What seems to be your emergency?</h3>
+          <h1>What seems to be your emergency?</h1>
         </header>
         
         <div className="container">

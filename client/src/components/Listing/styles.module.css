@@ -3,8 +3,8 @@
 .cont {
   height: 100%;
   overflow: auto;
-  padding-bottom: 60px;
   margin: 0;
+  padding-right: 0;
 }
 
 .item {
@@ -14,13 +14,12 @@
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
-
-  h1 {
-    flex: 2;
-    &:hover {
-      color: var(--highlight);
-    }
+  color: #2d9975;
   }
+
+  h5:hover {
+      color: #e62601;
+    }
 
   .rating {
     text-align: right;
@@ -30,4 +29,3 @@
   &:last-child {
     border-bottom: none;
   }
-}

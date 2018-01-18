@@ -11,7 +11,7 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
-a {
+.nav-link {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
@@ -19,7 +19,7 @@ a {
     line-height: 40px;
 }
     
-h1 {
+.topbarText {
     font-size: 28px;
     display: inline;
     margin: -15px 0 auto 0;

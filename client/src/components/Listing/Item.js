@@ -1,25 +1,27 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React, { PropTypes as T } from 'react';
+
+import styles from './styles.module.css';
 
 export class Item extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      hovered: false
+    };
   }
 
   render() {
-    const {detail} = this.props;
+    const { place } = this.props;
     return (
-      <div>
-        <li className="list-group-item d-flex justify-content-between align-items-center">
-          <h3>{detail.name}</h3>
-          <p>{detail.formatted_address}</p>
-          <p>{detail.formatted_phone_number}</p>
-          <p>{detail.website}</p>
-            <button type="submit" className="btn btn-info"> Save Info</button>
-        </li>
+      <div
+        onClick={() => this.props.onClick(place.place_id)}
+        className='item'
+      >
+        <h5>{place.name}</h5>
       </div>
-    )
+    );
   }
 }
 
-export default Item
+export default Item;

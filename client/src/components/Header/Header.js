@@ -11,7 +11,7 @@ export class Header extends React.Component {
    return (
      <div className="topbar">
        <img src={logo} alt="Logo" height="70px" width="70px" />
-       <Link to="/"><h1>HELP!</h1></Link>
+       <Link to="/"><h1 className="topbarText">HELP!</h1></Link>
        <section>
          <DisplayLinks />
        </section>
