@@ -1,6 +1,6 @@
 @import url("../../styles/colors.css");
 
-.container {
+.cont {
   height: 100%;
   overflow: auto;
   padding-bottom: 60px;

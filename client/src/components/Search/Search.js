@@ -10,7 +10,7 @@ const Search = props =>
         value={props.value}
         name="search"
         type="text"
-        className="form-control text-center"
+        className="form-control text-center search-bar"
         placeholder="Your Emergency"
         id="search"
       />

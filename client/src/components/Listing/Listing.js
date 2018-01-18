@@ -6,7 +6,7 @@ import Detail from '../Detail/Detail';
 export class Listing extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="container cont">
         <Item detail={Detail} key={this.props.place.id} />
       </div>
     )
