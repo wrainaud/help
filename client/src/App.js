@@ -20,7 +20,6 @@ const App = () => (
         <Route exact path="/login" render={() => <LoginForm _login={this._login} _googleSignin={this._googleSignin} />}/>
         <Route exact path="/signup" component={SignupForm} />
       </Switch>
-      <Footer />
     </div>
   </Router>
 );
